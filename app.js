@@ -50,7 +50,7 @@ app.use((error, req, res, next) => {
 
 mongoose
   .connect(
-    `mongodb+srv://priyesh08:assbuPSzMLMXfd6W@cluster0.2jkpeab.mongodb.net/mern-prod?retryWrites=true&w=majority&appName=Cluster0`
+    `mongodb+srv://:${process.env.DB_PASSWORD}@cluster0.2jkpeab.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority&appName=Cluster0`
   )
   .then(() => {
     app.listen(port);
