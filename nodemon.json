@@ -1,0 +1,8 @@
+{
+    "env":{
+        "DB_USER" : "your mongo username",
+        "DB_PASSWORD": "your mongo password",
+        "DB_NAME":"mern",
+        "JWT_KEY": "your secret key"
+    }
+}
